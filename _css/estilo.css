@@ -1,0 +1,122 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+	font-family: 'Fontelogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+	background-color: #dddddd;
+  	color: rgba(0, 0, 0, 1);
+	}
+div#interface {
+	width: 900px;/*largura da interface*/
+	background-color: #ffffff;
+	margin: -20px auto 0px auto;/*Margens do site(externa)*/
+	box-shadow: 0px 0px 10px rgba (0,0,0,.5);/*Sombras no site*/
+	padding: 10px 10px 10px 10px;/*margem interna (caso todas as margens sejam iguais, só precisa colocar uma vez.*/
+}
+p {
+	text-align: justify;
+	text-indent: 50px;
+	}	
+
+header#cabecalho img#icone {
+	position: absolute;
+	left: 960px;
+	top: 75px;
+}
+
+
+header#cabecalho img#telefone {
+	position: absolute;
+	left: 950px;
+	top: 52px;	
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;/*definir uma linha*/
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg")no-repeat 0px 80px;/*adicionar uma imagem no cabeçalho*/
+
+}
+
+header#cabecalho h1 {
+	font-family: 'Fontelogo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15pt;
+	color: #888888;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+/*Formatação de imagens com legendas.*/
+figure.foto-legenda{
+	position: relative; /*para a legenda ir parar dentro da imagem*/
+	border: 8px solid white;
+	display: inline-block;
+	box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img{/*tudo que for no fortado img ficará com essas especificações*/	
+	width: 100%; /*largura*/
+	height: 100%;/*altura*/
+}
+figure.foto-legenda figcaption{/*para a legenda da imagem não ficar aparecendo*/
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing:border-box;
+	transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{/*para o texto somente aparecer quando o mouse passar por cima*/
+	opacity: 1;
+}
+/*Formatação do menu*/
+nav#menu {
+	display: block;
+}
+nav#menu ul {
+	list-style: none; /*sumir com os marcadores do menu*/
+	text-transform: uppercase;/*Colocar as letras em maiusculas*/
+	position: absolute;/*definir posição*/
+	top: -20px;
+	left: 480px;
+}
+nav#menu li {
+	display: inline-block;/*colocar o menu na vertical*/
+	background-color: #dddddd;/*cor que circula o menu*/
+	padding: 10px;/*criar um espaço entre os parametros*/
+	margin: 2px;/*espaço entre os menus*/
+	transition: background-color 1s; /*definir transição. onde vai ser a transição e o tempo*/
+}
+
+nav#menu li:hover{
+	background-color: #606060; /*para aletar a cor do menu quando se passar o mouse por cima*/
+}
+
+nav#menu h1 {
+	display: none; /*deixar um texto invisivel*/
+}
+
+nav#menu a{/*toda tag menu que tiver link ficará assim*/
+	color: #000000;
+	text-decoration: none;/*tirar o sublinhado*/
+}
+
+nav#menu a:hover{/*tudo que tiver nessa tag será o que vai acontecer quando passar o mouse por cima*/
+	color: #ffffff;
+	text-decoration: underline;
+}
