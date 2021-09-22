@@ -120,3 +120,26 @@ nav#menu a:hover{/*tudo que tiver nessa tag será o que vai acontecer quando pas
 	color: #ffffff;
 	text-decoration: underline;
 }
+
+section#corpo {
+	display: block;/*Para mostrar como um bloco*/
+	width: 520px;/*definir largura*/
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
+aside#lateral {
+	display: block;
+	width: 350px;
+	float: right;/*para deixar a lateral flutuando na esquerda.*/
+}
+
+footer#rodape {
+	clear: both;/*para limpar a configuração dos dois lados*/
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+	text-align: center;
+}
