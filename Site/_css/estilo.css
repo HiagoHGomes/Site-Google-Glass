@@ -128,6 +128,19 @@ section#corpo {
 	border-right: 1px solid #606060;
 	padding-right: 15px;
 }
+table#tabelaspec {
+	border: 1px solid #606060;
+	border-spacing: 0px;/*para tirar o espaço entre as bordas*/
+	margin-left: auto;/**centralizar a tabela**/
+	margin-right: auto;
+}
+table#tabelaspec td {
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+	vertical-align: midle;
+
+}
 
 aside#lateral {
 	display: block;
