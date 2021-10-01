@@ -37,6 +37,12 @@ header#cabecalho img#icone {
 	top: 75px;
 }
 
+header#cabecalho img#specs {
+	position: absolute;
+	left: 924px;
+	top: 52px;
+}
+
 
 header#cabecalho img#telefone {
 	position: absolute;
