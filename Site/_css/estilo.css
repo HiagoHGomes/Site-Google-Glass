@@ -43,6 +43,17 @@ header#cabecalho img#specs {
 	top: 60px;
 }
 
+header#cabecalho img#photo {
+	position: absolute;
+	left: 923px;
+	top: 58px;
+}
+
+header#cabecalho img#mult {
+	position: absolute;
+	left: 935px;
+	top: 59px;
+}
 
 header#cabecalho img#telefone {
 	position: absolute;
