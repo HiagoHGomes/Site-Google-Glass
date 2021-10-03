@@ -39,8 +39,8 @@ header#cabecalho img#icone {
 
 header#cabecalho img#specs {
 	position: absolute;
-	left: 924px;
-	top: 52px;
+	left: 915px;
+	top: 60px;
 }
 
 
@@ -248,4 +248,5 @@ footer#rodape {
 
 footer#rodape p {
 	text-align: center;
+	color: #606060;
 }

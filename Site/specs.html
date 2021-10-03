@@ -4,6 +4,7 @@
 	<meta charset="UTF-8"/>
 	<title>Projeto Primeiro Site</title>
 	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="_css/specs.css">
 </head>
 <script src="_javascript/funcoes.js"></script>
 <body>
@@ -15,27 +16,36 @@
 	</hgroup>
 
 
-	<img id="icone" src="_imagens/especificacoes.png">
-<nav id="menu"  onmouseout="mudaFoto('_imagens/especificacoes.png')">	
+	<img id="specs" src="_imagens/especificacoes.png">
+<nav id="menu"  onmouseout="mudaSpecs('_imagens/especificacoes.png')">	
 	<h1>Menu Principal</h1>
 	<ul>
-		<li onmouseover="mudaFoto('_imagens/home.png')"><a href="index.html">Home</a></li>
-		<li onmouseover="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
-		<li onmouseover="mudaFoto('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
-		<li onmouseover="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
-		<li onmouseover="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+		<li onmouseover="mudaSpecs('_imagens/home.png')"><a href="index.html">Home</a></li>
+		<li onmouseover="mudaSpecs('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+		<li onmouseover="mudaSpecs('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+		<li onmouseover="mudaSpecs('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+		<li onmouseover="mudaSpecs('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
 	</ul>
 </nav>
 	</header>
+<section class="corpo-full">
+	<article id="noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+				<h3>Glass > Especificações</h3>
+				<h1>Raio-X no Google Glass</h1>
+				<h2>por Hiago Henrique</h2>
+				<h3 class="direita">Atualizado em 02/10/2021</h3>
+			</hgroup>
+		</header>
+		<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
-
-[AQUI ENTRA UMA IMAGEM]
+		<section id="conteudo">
+			<img src="_imagens/glass-esquema-marcado.jpg" alt="Oculos google glass">
+			<iframe src="google-glass.html" name="janela" id="frameSpecs" scrolling="no"></iframe>
+		</section>
+	</article>
+</section>
 
 <footer id="rodape">
     <p style="text-align:center;">Copyright 2021 - by Hiago Henrique<br/><br/>
