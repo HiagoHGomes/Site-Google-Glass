@@ -3,6 +3,7 @@
 <head>
     <title>pagina fale conosco</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css">
 <head>
 <script src="_javascript/funcoes.js"></script>
 <body>
@@ -32,39 +33,44 @@
                 <h3>Fale Conosco > Contato</h3>
                 <h1>Formulário de Contato</h1>
                 <h2>por Hiago Henrique</h2>
-                <h3 class="direita">Atualizado em 03/Outubro/2021</h3>
+                <h3 class="direita">Atualizado em 08/Outubro/2021</h3>
             </hgroup>
         </header>
     </article>
 </section>
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<form>
+    <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
+        <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Digitos"/></p>
+        <p><label for="cEmail">E-mail:</label><input type="email" name="tEmail" id="cEmail" size="20" maxlength="40" placeholder="Insira seu e-mail"/></p>
+        <fieldset id="sexo"><legend>Sexo:</legend> 
+            <input type="radio" name="tSexo" id="cMale"/><label for="cMale">Masculino</label><br/>
+            <input type="radio" name="tSexo" id="cFemale"/><label for="cFemale">Feminino</label>
+        </fieldset>
+        <p>Data de Nascimento:<input type="date" name="tDate" id="cDate"></p>
+    </fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+    <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+        <p><label for="cLog">Logradouro:</label><input type="text" name="tLog" id="cLog" size="25" maxlength="80" placeholder="Avenida,Rua, Travessa e etc"/></p>
+        <p><label for="cNumero">Número:</label><input type="number" name="tNumero" id="cNumero" min="0" max="9999" size="6"/></p>
+        <p>Estado:</p>
+        <p>Cidade:</p>
+    </fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+    <fieldset id="msg"><legend>Mensagem do Usuário</legend> 
+        Grau de Urgência:
+        Mensagem:
+    </fieldset>
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+    <fieldset id="pedido"><legend>Quero um Google Glass</legend>
+        Gostaria de adquirir um Google Glass quando disponível
+        Cor:
+        Quantidade:
+        Preço Total: R$
+    </fieldset>
 
-
-[BOTÃO ENVIAR]
-
+    [BOTÃO ENVIAR]
+</form>
 <p style="text-align:center">Copyright 2021 - by Hiago Henrique <br/><br/>
 <a href="https://www.facebook.com/Hiago.Henrique.Gomes/" target="_blank">Facebook</a> | <a href="https://www.instagram.com/_hiagod" target="_blank">Instagram</a></p>
 </div>
