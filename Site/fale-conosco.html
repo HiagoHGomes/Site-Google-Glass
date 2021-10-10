@@ -67,19 +67,27 @@
             </optgroup>
         </select></p>
 
-        <p><label for="cCity">Cidade:</label><input type="text" name="tCity" id="cCity" size="25" maxlength="40" placeholder="Sua cidade"></p>
+        <p><label for="cCity">Cidade:</label><input type="text" name="tCity" id="cCity" size="25" maxlength="40" placeholder="Sua cidade" list="cidades"></p>
+        <datalist id="cidades">
+            <option value="Itinga do Maranhão"></option>
+            <option value="Açailandia"></option>
+            <option value="Imperatriz"></option>
+            <option value="São Luís"></option>
+        </datalist>
     </fieldset>
 
     <fieldset id="msg"><legend>Mensagem do Usuário</legend> 
-        <p><label for="">Grau de Urgência:</label></p>
-        <p><label for="">Mensagem:</label></p>
+        <p><label for="cGrau">Grau de Urgência:</label>
+        0<input type="range" name="tGrau" id="cGrau" min="0" max="10" step="1">10</p>
+        <p><label for="cMsg">Mensagem:</label>
+        <textarea name="tMsg" id="cMsg" cols="45" rows="10" placeholder="Deixe aqui sua mensagem."></textarea></p>
     </fieldset>
 
     <fieldset id="pedido"><legend>Quero um Google Glass</legend>
-        Gostaria de adquirir um Google Glass quando disponível
-        Cor:
-        Quantidade:
-        Preço Total: R$
+        <p><label for="">Gostaria de adquirir um Google Glass quando disponível</label></p>
+        <p><label for=""></label>Cor:</label></p>
+        <p><label for=""></label>Quantidade:</label></p>
+        <p><label for=""></label>Preço Total: R$</label></p>
     </fieldset>
 
     [BOTÃO ENVIAR]
