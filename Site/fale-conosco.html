@@ -38,7 +38,8 @@
         </header>
     </article>
 </section>
-<form>
+
+<form method="post " id="fContato" action="mailto:hiago_h3@hotmail.com">
     <fieldset id="usuario"><legend>Identificação do Usuário</legend>
         <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
         <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Digitos"/></p>
@@ -53,13 +54,25 @@
     <fieldset id="endereco"><legend>Endereço do Usuário</legend>
         <p><label for="cLog">Logradouro:</label><input type="text" name="tLog" id="cLog" size="25" maxlength="80" placeholder="Avenida,Rua, Travessa e etc"/></p>
         <p><label for="cNumero">Número:</label><input type="number" name="tNumero" id="cNumero" min="0" max="9999" size="6"/></p>
-        <p>Estado:</p>
-        <p>Cidade:</p>
+
+        <p><label for="cEstado">Estado:</label><select name="tEstado" id="cEstado">
+            <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PI">Piauí</option>
+            </optgroup>
+
+            <optgroup label="Região Norte">
+                <option value="TO">Tocantins</option>
+                <option value="PA">Pará</option>
+            </optgroup>
+        </select></p>
+
+        <p><label for="cCity">Cidade:</label><input type="text" name="tCity" id="cCity" size="25" maxlength="40" placeholder="Sua cidade"></p>
     </fieldset>
 
     <fieldset id="msg"><legend>Mensagem do Usuário</legend> 
-        Grau de Urgência:
-        Mensagem:
+        <p><label for="">Grau de Urgência:</label></p>
+        <p><label for="">Mensagem:</label></p>
     </fieldset>
 
     <fieldset id="pedido"><legend>Quero um Google Glass</legend>
