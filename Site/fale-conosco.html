@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="_css/form.css">
 <head>
 <script src="_javascript/funcoes.js"></script>
+<script>
+    function calc_total () {
+        var qtd = parseInt(document.getElementById ('cQuant').value)
+        tot = qtd*1500;
+        document.getElementById ('cPreco').value = tot;
+    }
+</script>
 <body>
 <div id="interface"> 
     <header id="cabecalho">
@@ -39,7 +46,7 @@
     </article>
 </section>
 
-<form method="post " id="fContato" action="mailto:hiago_h3@hotmail.com">
+<form method="post " id="fContato" action="mailto:hiago_h3@hotmail.com" oninput="calc_total();">
     <fieldset id="usuario"><legend>Identificação do Usuário</legend>
         <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
         <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Digitos"/></p>
@@ -80,17 +87,21 @@
         <p><label for="cGrau">Grau de Urgência:</label>
         0<input type="range" name="tGrau" id="cGrau" min="0" max="10" step="1">10</p>
         <p><label for="cMsg">Mensagem:</label>
-        <textarea name="tMsg" id="cMsg" cols="45" rows="10" placeholder="Deixe aqui sua mensagem."></textarea></p>
+        <textarea name="tMsg" id="cMsg" cols="35" rows="10" placeholder="Deixe aqui sua mensagem."></textarea></p>
     </fieldset>
 
     <fieldset id="pedido"><legend>Quero um Google Glass</legend>
-        <p><label for="">Gostaria de adquirir um Google Glass quando disponível</label></p>
-        <p><label for=""></label>Cor:</label></p>
-        <p><label for=""></label>Quantidade:</label></p>
-        <p><label for=""></label>Preço Total: R$</label></p>
+        <p><input type="checkbox" name="tPed" id="cPed">
+            <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+        <p><label for="cColor"></label>Cor:</label>
+        <input type="color" name="tColor" id="cColor" value="#0000FF"></p>
+        <p><label for="cQuant"></label>Quantidade:</label>
+        <input type="number" name="tQuant" id="cQuant" min="0" max="5"></p>
+        <p><label for="cPreco"></label>Preço Total: R$</label>
+        <input type="text" name="tPreco" id="cPreco" placeholder="Total a pagar." readonly></p>
     </fieldset>
 
-    [BOTÃO ENVIAR]
+    <input type="image" name="cEnviar" src="_imagens/botao-enviar.png"
 </form>
 <p style="text-align:center">Copyright 2021 - by Hiago Henrique <br/><br/>
 <a href="https://www.facebook.com/Hiago.Henrique.Gomes/" target="_blank">Facebook</a> | <a href="https://www.instagram.com/_hiagod" target="_blank">Instagram</a></p>
