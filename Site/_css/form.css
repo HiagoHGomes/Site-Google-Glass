@@ -48,3 +48,6 @@ fieldset#msg {
 fieldset#pedido {
     background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
 }
+body {
+    color: #009A00 ;
+}
